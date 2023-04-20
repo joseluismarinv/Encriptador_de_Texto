@@ -1,0 +1,299 @@
+:root{
+    --fuente: "Inter", sans-serif;
+
+    --primario: #F3F5FC;
+    --secundario: #0A3871;
+    --gris: #495057;
+    --negro: #000000;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuente);
+    font-size: 1.6rem;
+    line-height: 4.8rem;
+    background-color: var(--primario);
+}
+
+/* Globales */
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1,h5{
+    font-family: var(--fuente);
+}
+h1{
+    font-size: 3.2rem;
+}
+
+h5{
+    font-size: 2.4rem;
+}
+
+@media (min-width: 992px) {
+    .desktop{
+        display: flex;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .input-encrypt-decrypt{
+        flex: 4;
+        margin: 16.8rem 8rem 0 0;
+    }
+
+    .show-text-encrypt{
+        flex: 2;
+        display: flex;
+        justify-content: column;
+        align-items: center;
+        margin-top: 4rem;
+        background-color: white;
+        border-radius: 3.2rem;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    }
+    
+}
+
+/* Utilidades */
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+
+/* Heading */
+.header{
+    margin: 2.4rem 1.6rem;
+}
+
+@media (min-width: 768px) {
+    .header{
+        margin: 7.4rem 0 10rem 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .header{
+        margin: 4rem 0 8rem 8.4rem;
+    }
+}
+
+/* Logo */
+.logo{
+    width: 32px;
+}
+
+/* Encriptador */
+.text-input-encrypt{
+    display: block;
+    font-weight: normal;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    color: var(--secundario);
+    border: none;
+    background-color: var(--primario);
+    width: 100%;
+    height: 20rem;
+    margin: 5.4rem 0 0 0;
+    resize: none;
+    outline: none;
+}
+
+::placeholder{
+    color: var(--secundario);
+}
+
+@media (min-width: 768px) {
+    .text-input-encrypt{
+        height: 50rem;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .text-input-encrypt{
+        height: 57rem;
+    }
+    
+}
+
+.instruction{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+.text-instruction{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: var(--gris);
+}
+
+.svg-instruction{
+margin-right: 0.8rem;
+}
+
+/* Botones */
+
+.section-button{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .section-button{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2.4rem;
+    }
+    
+}
+
+.btn{
+    width: 100%;
+    margin-bottom: 2.4rem;
+    padding: 2.4rem;
+    border-radius: 2.4rem;
+    border-color: var(--secundario);
+    border: 1px solid var(--secundario);
+    line-height: 2rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .btn{
+        margin-bottom: 3.2rem;
+    }
+    
+}
+
+.btn-encrypt{
+    background-color: var(--secundario);
+    color: white;
+}
+
+.btn-decrypt{
+    background-color: transparent;
+    color: var(--secundario);
+}
+
+.btn-copy{
+    background-color: transparent;
+    color: var(--secundario);
+    margin-bottom: 0;
+}
+
+/* Cuadro de notificaciones */
+
+.section-notify{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-encrypt{
+    width: 0;
+}
+
+@media (min-width: 992px) {
+    .img-encrypt{
+        width: 100%;
+        padding: 3.2rem 3.2rem 0 3.2rem;
+        margin: 0;
+    }
+    
+}
+
+.box-notification{
+    background-color: white;
+    border-radius: 3.2rem;
+    padding: 3.2rem;
+    text-align: center;
+    color: var(--gris);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+@media (min-width: 768px) {
+    .box-notification{
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .box-notification{
+        padding: 3.2rem;
+        height: 100%;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)
+    }
+    
+}
+
+.notification-msg{
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.notification-indication{
+    width: 75%;
+    line-height: 2.4rem;
+    margin: 1.6rem auto 0 auto;
+}
+
+/* Cuadro de encriptacion  */
+
+.text-encrypt{
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: var(--gris);
+    margin-bottom: 3.2rem;
+}
+
+.text-decrypt{
+    margin: 0;
+    border: none;
+    outline: none;
+    resize: none;
+    height: 20rem;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .text-decrypt{
+        height: 40rem;
+    }
+}
+@media (min-width: 992px) {
+    .text-decrypt{
+        height: 73.5rem;
+    }
+    
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0 0;
+    line-height: 2rem;
+}
