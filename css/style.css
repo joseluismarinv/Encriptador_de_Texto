@@ -109,7 +109,7 @@ h5{
     border: none;
     background-color: var(--primario);
     width: 100%;
-    height: 20rem;
+    height: 10rem;
     margin: 5.4rem 0 0 0;
     resize: none;
     outline: none;
@@ -231,6 +231,7 @@ margin-right: 0.8rem;
     text-align: center;
     color: var(--gris);
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    margin-top: 0.8rem;
 }
 
 @media (min-width: 768px) {
