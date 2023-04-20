@@ -121,13 +121,14 @@ h5{
 @media (min-width: 768px) {
     .text-input-encrypt{
         height: 50rem;
+        margin-top: 5.4rem;
     }
     
 }
 
 @media (min-width: 992px) {
     .text-input-encrypt{
-        height: 57rem;
+        height: 57.5rem;
     }
     
 }
@@ -230,7 +231,6 @@ margin-right: 0.8rem;
     text-align: center;
     color: var(--gris);
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    margin-top: 0.8rem;
 }
 
 @media (min-width: 768px) {
@@ -242,9 +242,9 @@ margin-right: 0.8rem;
 
 @media (min-width: 992px) {
     .box-notification{
-        padding: 3.2rem;
         height: 100%;
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        margin: 0.8rem;
     }
     
 }
@@ -274,7 +274,7 @@ margin-right: 0.8rem;
     border: none;
     outline: none;
     resize: none;
-    height: 20rem;
+    height: 7.2rem;
     width: 100%;
 }
 
