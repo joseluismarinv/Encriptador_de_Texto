@@ -84,7 +84,7 @@ h5{
 
 @media (min-width: 768px) {
     .header{
-        margin: 7.4rem 0 10rem 4rem;
+        margin: 7.4rem 0 0rem 4rem;
     }
 }
 
@@ -120,15 +120,16 @@ h5{
 
 @media (min-width: 768px) {
     .text-input-encrypt{
-        height: 50rem;
-        margin-top: 5.4rem;
+        height: 29rem;
+        margin-top: 1.5rem ;
     }
     
 }
 
 @media (min-width: 992px) {
     .text-input-encrypt{
-        height: 57.5rem;
+        height: 56.7rem;
+        margin-top: 5.4rem;
     }
     
 }
@@ -244,7 +245,7 @@ margin-right: 0.8rem;
     .box-notification{
         height: 100%;
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-        margin: 0.8rem;
+        margin-top: 0.8rem;
     }
     
 }
@@ -280,12 +281,12 @@ margin-right: 0.8rem;
 
 @media (min-width: 768px) {
     .text-decrypt{
-        height: 40rem;
+        height: 25rem;
     }
 }
 @media (min-width: 992px) {
     .text-decrypt{
-        height: 73.5rem;
+        height: 73rem;
     }
     
 }
@@ -296,4 +297,12 @@ footer{
     font-size: 1.2rem;
     margin: 1.5rem 0 0 0;
     line-height: 2rem;
+}
+
+/* Extras */
+
+.highlight-notification{
+    text-shadow: 0px 0px 14px rgba(255,0,0,0.83);
+    margin: 0;
+    line-height: 3rem;
 }

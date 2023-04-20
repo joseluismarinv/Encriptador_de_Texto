@@ -3,6 +3,7 @@ let encrypt_decrypt = false;
 
 const sectionImg = document.querySelector('#toogleText');
 const sectionText = document.querySelector('#text-encrypt-decrypt');
+const error = document.querySelector('.notification-msg');
 sectionText.style.display = 'none';
 
 const botonEncrypt = document.querySelector('#encrypt');
@@ -37,19 +38,26 @@ const decrypt = (text) => {
 const showText = () => {
     const input = document.querySelector('#text-input');
     let text = input.value;
-    text = text.trim();
-    text = text.toLowerCase();
-    text = text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-      
-    
-    sectionImg.style.display = 'none';
-    sectionText.style.display = 'block';
 
-    const textShow = document.querySelector('#textShow');
-    if(encrypt_decrypt){
-        textShow.innerHTML = encrypt(text);
-    } else {
-        textShow.innerHTML = decrypt(text);
+    if(!text.trim()){
+        sectionImg.style.display = 'hidden';
+        sectionText.style.display = 'none';
+        error.className = 'highlight-notification';
+    } else{
+        text = text.trim();
+        text = text.toLowerCase();
+        text = text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+          
+        
+        sectionImg.style.display = 'none';
+        sectionText.style.display = 'block';
+    
+        const textShow = document.querySelector('#textShow');
+        if(encrypt_decrypt){
+            textShow.innerHTML = encrypt(text);
+        } else {
+            textShow.innerHTML = decrypt(text);
+        }
     }
 }
 
